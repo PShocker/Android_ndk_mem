@@ -70,7 +70,7 @@ char *get_mmap_memory(const char *file, int size)
 {
 	int MAP_SIZE = size;
 	//打开文件，fd文件句柄
-	int fd = open(file, O_RDWR | O_CREAT | O_TRUNC, 0644);
+	int fd = open(file, O_RDWR | O_CREAT, 0644);
 
 	if (fd < 0)
 	{
