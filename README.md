@@ -1,6 +1,10 @@
 # Android_ndk_mem
 ndk编译可执行文件跨进程读写app内存
 
+游戏app:
+链接：https://pan.baidu.com/s/15N_GaoDQBGPfIfXwfvA9dA 
+提取码：zd68
+
 # 编译流程
 ## 配置ndk环境
 下载Android Studio
