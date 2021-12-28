@@ -1,0 +1,2 @@
+# Android_ndk_mem
+ndk编译可执行文件跨进程读写app内存
