@@ -3,7 +3,7 @@
 
 
 //两内存地址逐一比较
-bool Memcmp(const char *target, const char *pattern, int Len)
+bool Memcmp(unsigned const char *target,unsigned const char *pattern, int Len)
 {
     for (int i = 0; i < Len; i++)
     {
@@ -20,7 +20,7 @@ bool Memcmp(const char *target, const char *pattern, int Len)
 }
 
 //特征码搜索
-int AOBScan(const char *target, int tLen, const char *pattern, int pLen)
+int AOBScan(unsigned const char *target, int tLen, unsigned const char *pattern, int pLen)
 {
     if (tLen<pLen)
     {

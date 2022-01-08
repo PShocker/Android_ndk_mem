@@ -8,7 +8,10 @@
 #include "Memory.h"
 #include "AOBScan.h"
 
-char pattern[] = {0x32, 0x00, 0x00, 0x00, 0x0A, 0x00, 0x00, 0x00};
+//匹配开局的150阳光,第一个字节就是阳光数
+
+unsigned char pattern[] = {0x96, 0x00, 0x00, 0x00, 0x04, 0x00, 0x00, 0x00};
+
 
 int main(int argc, char *argv[])
 {
@@ -30,8 +33,8 @@ int main(int argc, char *argv[])
         if (!ml->moduleName[0]) //判断是否有模块名,注意,这个例子是没有模块名的.
         {
             int size = ml->moduleSize;
-            char *target = (char *)malloc(size);
-            char *target_ = target;
+            unsigned char *target = (unsigned char *)malloc(size);
+            unsigned char *target_ = target;
             int r = ReadProcessMemory(pid, (void *)ml->baseAddress, target, size);//读取内存
             if (r == 0)
             {

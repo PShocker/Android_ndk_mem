@@ -1,4 +1,4 @@
-./obj/local/x86/objs/jni_test/jni_test.o: jni\jni_test.cpp \
+./obj/local/armeabi-v7a/objs/jni_test/jni_test.o: jni\jni_test.cpp \
   C:\Users\Shocker\AppData\Local\Android\Sdk\ndk-bundle\build\\..\sources\cxx-stl\llvm-libc++\include\iostream \
   C:\Users\Shocker\AppData\Local\Android\Sdk\ndk-bundle\build\\..\sources\cxx-stl\llvm-libc++\include\__config \
   C:\Users\Shocker\AppData\Local\Android\Sdk\ndk-bundle\build\\..\sources\cxx-stl\llvm-libc++\include\ios \
