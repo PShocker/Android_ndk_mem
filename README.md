@@ -5,10 +5,22 @@ ndk编译可执行文件跨进程读写app内存
 链接：https://pan.baidu.com/s/15N_GaoDQBGPfIfXwfvA9dA 
 提取码：zd68
 
-请在开局150阳光下执行
-chmod 777 jni_test
-./libs/xx/jni_test
+# 先把可执行文件传送到手机或模拟器
 
+```
+进入可执行文件夹
+cd libs/x86
+adb push jni_test /data/local/tmp
+```
+# 更改权限并执行
+打开游戏,在150阳光下使用
+```
+adb shell
+su
+cd /data/local/tmp
+chmod 777 jni_test
+./jni_test
+```
 # 编译流程
 ## 配置ndk环境
 下载Android Studio
