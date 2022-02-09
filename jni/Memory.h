@@ -141,6 +141,7 @@ int ReadProcessMemory(int pid, void *lpAddress, void *buffer, int size)
 		//printf("ReadProcessMemory fail\n");
 		bread = 0;
 	}
+	close(fd);
 	return bread;
 }
 
