@@ -1,6 +1,10 @@
 # Android_ndk_mem
 ndk编译可执行文件跨进程读写app内存
 
+52pojie:
+
+https://www.52pojie.cn/thread-1568457-1-1.html
+
 游戏app:
 链接：https://pan.baidu.com/s/15N_GaoDQBGPfIfXwfvA9dA 
 提取码：zd68
@@ -40,3 +44,5 @@ chmod 777 jni_test
 cd jni
 ndk-build
 ```
+
+![image](img/1645007043(1).jpg)
